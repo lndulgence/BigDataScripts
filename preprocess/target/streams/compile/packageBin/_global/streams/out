@@ -1,0 +1,31 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /scripts/preprocess/target/scala-2.13/preprocessing_2.13-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	preprocess[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /scripts/preprocess/target/scala-2.13/classes/preprocess[0m
+[0m[[0m[0mdebug[0m] [0m[0m	preprocess/App$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /scripts/preprocess/target/scala-2.13/classes/preprocess/App$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	preprocess/App$$typecreator19$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /scripts/preprocess/target/scala-2.13/classes/preprocess/App$$typecreator19$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	preprocess/App$$typecreator16$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /scripts/preprocess/target/scala-2.13/classes/preprocess/App$$typecreator16$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	preprocess/App$$typecreator8$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /scripts/preprocess/target/scala-2.13/classes/preprocess/App$$typecreator8$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	preprocess/App$$typecreator1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /scripts/preprocess/target/scala-2.13/classes/preprocess/App$$typecreator1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	preprocess/App$$typecreator14$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /scripts/preprocess/target/scala-2.13/classes/preprocess/App$$typecreator14$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	preprocess/App$$typecreator18$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /scripts/preprocess/target/scala-2.13/classes/preprocess/App$$typecreator18$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	preprocess/App$$typecreator9$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /scripts/preprocess/target/scala-2.13/classes/preprocess/App$$typecreator9$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	preprocess/App$$typecreator15$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /scripts/preprocess/target/scala-2.13/classes/preprocess/App$$typecreator15$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	preprocess/App$$typecreator7$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /scripts/preprocess/target/scala-2.13/classes/preprocess/App$$typecreator7$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	preprocess/App$$typecreator2$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /scripts/preprocess/target/scala-2.13/classes/preprocess/App$$typecreator2$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	preprocess/App$$typecreator17$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /scripts/preprocess/target/scala-2.13/classes/preprocess/App$$typecreator17$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	preprocess/App.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /scripts/preprocess/target/scala-2.13/classes/preprocess/App.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

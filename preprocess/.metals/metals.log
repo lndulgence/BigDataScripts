@@ -1,0 +1,274 @@
+2022.11.27 19:45:52 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/.metals/lsp.trace.json or /home/indul/.cache/metals/lsp.trace.json
+2022.11.27 19:45:53 INFO  logging to file /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/.metals/metals.log
+2022.11.27 19:45:53 INFO  Started: Metals version 0.11.9 in workspace '/home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example' for client Visual Studio Code 1.72.2.
+2022.11.27 19:45:54 INFO  time: initialize in 1.06s
+2022.11.27 19:45:55 WARN  Build server is not auto-connectable.
+2022.11.27 19:45:55 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/project/Dependencies.scala
+2022.11.27 19:45:58 INFO  no build target found for /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/project/Dependencies.scala. Using presentation compiler with project's scala-library version: 3.2.0
+2022.11.27 19:45:59 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Hello.scala
+2022.11.27 19:46:00 INFO  time: code lens generation in 3.64s
+2022.11.27 19:46:18 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Hello.scala
+2022.11.27 19:47:22 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/attempt.scala
+2022.11.27 19:47:30 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Hello.scala
+2022.11.27 19:47:37 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Hello.scala
+2022.11.27 19:47:37 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Hello.scala
+2022.11.27 19:47:37 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Hello.scala
+2022.11.27 19:49:30 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Hello.scala
+2022.11.27 19:50:45 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/build.sbt
+2022.11.27 19:50:58 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/project/Dependencies.scala
+2022.11.27 19:52:09 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/build.sbt
+2022.11.27 19:53:13 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/build.sbt
+Nov 27, 2022 7:53:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 577
+2022.11.27 19:53:58 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/build.sbt
+2022.11.27 19:53:58 INFO  skipping build import with status 'Dismissed'
+2022.11.27 19:55:04 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/build.sbt
+2022.11.27 19:55:04 INFO  skipping build import with status 'Dismissed'
+2022.11.27 19:56:41 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Hello.scala
+2022.11.27 19:57:06 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Hello.scala
+2022.11.27 19:57:31 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Hello.scala
+2022.11.27 19:59:48 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Hello.scala
+2022.11.27 20:00:48 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Hello.scala
+2022.11.27 20:01:33 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.27 20:04:09 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.27 20:04:17 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.27 20:08:15 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.27 20:11:31 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.27 20:13:18 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.27 20:14:02 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.27 20:18:29 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.27 20:18:48 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.27 20:20:17 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:30:35 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:35:04 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:36:33 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:39:00 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:39:06 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:41:58 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:47:31 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+Nov 28, 2022 11:51:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3148
+2022.11.28 11:51:31 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:52:35 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:52:39 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:52:54 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:53:05 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:53:44 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:57:16 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:57:45 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:57:59 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:58:48 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:59:12 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:59:28 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:59:40 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 11:59:57 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:00:21 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:01:48 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+Nov 28, 2022 12:01:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3693
+2022.11.28 12:02:19 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:02:33 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:02:41 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:03:38 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:03:41 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:03:50 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:04:26 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:04:30 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:05:27 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:05:44 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+Nov 28, 2022 12:05:49 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1548)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1548)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1548)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1548)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1619)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+2022.11.28 12:05:53 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:06:05 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:06:39 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:06:50 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:06:54 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:08:21 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:08:27 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:10:07 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+Nov 28, 2022 12:10:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4386
+2022.11.28 12:51:41 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:52:20 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:52:29 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:56:48 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:56:58 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:58:35 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:58:53 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 12:59:15 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 13:40:00 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 13:40:04 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:14:53 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:14:59 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:17:29 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:19:17 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:21:30 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:21:55 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:23:03 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:23:20 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:24:59 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:25:21 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:26:52 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:28:20 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:32:29 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:32:56 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:34:53 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:35:08 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:39:38 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:42:18 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:48:09 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:48:54 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:50:13 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:50:24 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:50:38 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:51:14 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:52:33 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:55:01 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:56:43 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/SparkApp.scala
+2022.11.28 15:57:42 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Preprocess.scala
+2022.11.28 15:57:47 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Preprocess.scala
+2022.11.28 16:03:27 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Preprocess.scala
+2022.11.28 16:08:14 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Preprocess.scala
+2022.11.28 16:18:50 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Preprocess.scala
+2022.11.28 16:22:09 ERROR text document: file:///home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Preprocess.scalajava.nio.file.NoSuchFileException: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Preprocess.scala
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.nio.file.Files.newByteChannel(Files.java:371)
+	at java.nio.file.Files.newByteChannel(Files.java:422)
+	at java.nio.file.Files.readAllBytes(Files.java:3206)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$2(InteractiveSemanticdbs.scala:90)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:90)
+	at java.util.HashMap.compute(HashMap.java:1229)
+	at java.util.Collections$SynchronizedMap.compute(Collections.java:2692)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:89)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:63)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1744)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1742)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+
+2022.11.28 16:22:12 ERROR text document: file:///home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Preprocess.scalajava.nio.file.NoSuchFileException: /home/indul/Documents/BigData/Spark-Hadoop/scripts/ex/example/src/main/scala/example/Preprocess.scala
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.nio.file.Files.newByteChannel(Files.java:371)
+	at java.nio.file.Files.newByteChannel(Files.java:422)
+	at java.nio.file.Files.readAllBytes(Files.java:3206)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$2(InteractiveSemanticdbs.scala:90)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:90)
+	at java.util.HashMap.compute(HashMap.java:1229)
+	at java.util.Collections$SynchronizedMap.compute(Collections.java:2692)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:89)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:63)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1744)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1742)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+
+2022.11.28 16:28:14 INFO  shutting down Metals
+2022.11.28 16:29:09 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/.metals/lsp.trace.json or /home/indul/.cache/metals/lsp.trace.json
+2022.11.28 16:29:09 INFO  logging to file /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/.metals/metals.log
+2022.11.28 16:29:09 INFO  Started: Metals version 0.11.9 in workspace '/home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess' for client Visual Studio Code 1.72.2.
+2022.11.28 16:29:14 INFO  time: initialize in 4.47s
+2022.11.28 16:29:15 WARN  Build server is not auto-connectable.
+2022.11.28 16:29:15 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/src/main/scala/preprocess/Preprocess.scala
+2022.11.28 16:29:18 INFO  no build target found for /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/src/main/scala/preprocess/Preprocess.scala. Using presentation compiler with project's scala-library version: 3.2.0
+2022.11.28 16:29:19 INFO  time: code lens generation in 3.29s
+2022.11.28 16:32:17 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/src/main/scala/preprocess/Preprocess.scala
+2022.11.28 16:39:00 INFO  shutting down Metals
+2022.11.28 16:39:00 ERROR Unexpected error initializing serverorg.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+
+2022.11.28 16:41:02 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/.metals/lsp.trace.json or /home/indul/.cache/metals/lsp.trace.json
+2022.11.28 16:41:03 INFO  logging to file /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/.metals/metals.log
+2022.11.28 16:41:03 INFO  Started: Metals version 0.11.9 in workspace '/home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess' for client Visual Studio Code 1.72.2.
+2022.11.28 16:41:04 INFO  time: initialize in 1.16s
+2022.11.28 16:41:06 WARN  Build server is not auto-connectable.
+2022.11.28 16:41:06 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/src/main/scala/preprocess/Preprocess.scala
+2022.11.28 16:41:09 INFO  no build target found for /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/src/main/scala/preprocess/Preprocess.scala. Using presentation compiler with project's scala-library version: 3.2.0
+2022.11.28 16:41:10 INFO  time: code lens generation in 3.43s
+2022.11.28 16:44:47 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/src/main/scala/preprocess/Preprocess.scala
+2022.11.28 16:44:52 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/src/main/scala/preprocess/Preprocess.scala
+2022.11.28 16:47:05 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/src/main/scala/preprocess/Preprocess.scala
+2022.11.28 16:47:38 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/src/main/scala/preprocess/Preprocess.scala
+2022.11.28 16:47:59 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/src/main/scala/preprocess/Preprocess.scala
+2022.11.28 16:48:14 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/src/main/scala/preprocess/Preprocess.scala
+2022.11.28 17:08:19 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/src/main/scala/preprocess/Preprocess.scala
+2022.11.28 17:18:30 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/src/main/scala/preprocess/Preprocess.scala
+2022.11.28 17:18:34 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/src/main/scala/preprocess/Preprocess.scala
+2022.11.28 17:26:43 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/src/main/scala/preprocess/Preprocess.scala
+2022.11.28 19:17:28 WARN  no build target for: /home/indul/Documents/BigData/Spark-Hadoop/scripts/preprocess/src/main/scala/preprocess/Preprocess.scala
+2022.11.28 19:19:41 INFO  shutting down Metals
