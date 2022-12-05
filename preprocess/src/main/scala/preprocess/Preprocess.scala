@@ -69,10 +69,15 @@ object App {
     for(column<-preprocess.columns){
       preprocess=preprocess.withColumn(column, castint(preprocess(column)) )
     }
-    val shuffledDF = preprocess.orderBy(rand()).toDF()
-    val trainset = shuffledDF.limit((shuffledDF.count()*0.7).toInt)
-    val inversedf=shuffledDF.withColumn("id",monotonicallyIncreasingId).orderBy(desc("id"))
-    val testset = inversedf.limit((inversedf.count()*0.3).toInt).drop("id")
+    //val shuffledDF = preprocess.orderBy(rand()).toDF()
+    //val trainset = shuffledDF.limit((shuffledDF.count()*0.7).toInt)
+    //val inversedf=shuffledDF.withColumn("id",monotonicallyIncreasingId).orderBy(desc("id"))
+    //val testset = inversedf.limit((inversedf.count()*0.3).toInt).drop("id")
+
+    val splits = data.randomSplit(Array(0.7, 0.3))
+    val trainset = splits(0).cache()
+    val testset = splits(1)
+
 
     trainset.show()
 
