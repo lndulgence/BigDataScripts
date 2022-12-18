@@ -3,7 +3,7 @@ import org.apache.spark.sql.{SparkSession, Row}
 import org.apache.spark.sql.functions._
 import org.apache.spark.ml.feature.Normalizer
 import org.apache.spark.sql.functions.rand
-
+import java.nio.file.{Paths, Files}
 
 object App {
 
@@ -11,12 +11,26 @@ object App {
 
   def main(args: Array[String]): Unit = {
 
+    var datapath : String = ""
+    var trainpath : String = ""
+    var testpath :String = ""
+
+    if(args.length!=3){
+      println ("use run <path to dataset> <path to save trainset>  <path to save testset>")
+      return
+    }
+    else{
+      datapath=args(0)
+      trainpath= args(1)
+      testpath= args(2)
+      }
+
     val spark = SparkSession.builder().config("spark.master", "local").getOrCreate()
     spark.sparkContext.setLogLevel("WARN")
 
     import spark.implicits._
 
-    val rawdata = spark.read.option("header", "true").csv("hdfs://hadoop-master:9000/data/1996.csv")
+    val rawdata = spark.read.option("header", "true").csv(datapath)
       //Uncommenting the below line shows that the var in quotes only takes the value NA
       //rawdata.select(rawdata("CancellationCode")).distinct.show()
     val setnull = udf((x: String)=> if (x=="NA" || x== "") null else x)
@@ -24,7 +38,7 @@ object App {
       //We also drop CancellationCode
     val reduceddata= rawdata.drop("Year","ArrTime","ActualElapsedTime","AirTime","TaxiIn","Diverted","CarrierDelay","WeatherDelay","NASDelay","SecurityDelay","LateAircraftDelay","CancellationCode" )
       //in case a possible testing df has null values.
-    val nonnulldata=reduceddata.select(reduceddata.columns.map(c => setnull(col(c)).alias(c)): _*).na.drop()
+    val nonnulldata=reduceddata.select(reduceddata.columns.map(c => setnull(col(c)).alias(c)): _*)//.na.drop()
     val reordereddata= nonnulldata.select("Month", "DayofMonth", "DayOfWeek", "DepTime", "CRSDepTime", "CRSArrTime", "UniqueCarrier", "FlightNum", "TailNum", "CRSElapsedTime", "DepDelay", "Origin", "Dest", "Distance", "TaxiOut", "Cancelled", "ArrDelay")
       //reordereddata.show()
 
@@ -66,18 +80,13 @@ object App {
     preprocess = preprocess.withColumn("CompoundDelay", $"CRSElapsedTime"+$"TaxiOut"+$"DepDelay")
     preprocess = preprocess.select("Month", "DayofMonth", "DayOfWeek", "FlightNum", "CRSElapsedTime", "DepDelay", "Distance", "TaxiOut", "Origin_t", "Dest_t", "UniqueCarrier_t", "DepHour", "DepMin", "CRSDepHour", "CRSDepMin", "CRSArrHour", "CRSArrMin", "CompoundDelay", "ArrDelay")
     val castint = udf(( x: String)=>x.toFloat)
-    for(column<-preprocess.columns){
-      preprocess=preprocess.withColumn(column, castint(preprocess(column)) )
+   for(column<-preprocess.columns){
+    preprocess=preprocess.withColumn(column, preprocess(column).cast("float") )
     }
-    //val shuffledDF = preprocess.orderBy(rand()).toDF()
-    //val trainset = shuffledDF.limit((shuffledDF.count()*0.7).toInt)
-    //val inversedf=shuffledDF.withColumn("id",monotonicallyIncreasingId).orderBy(desc("id"))
-    //val testset = inversedf.limit((inversedf.count()*0.3).toInt).drop("id")
 
-    val splits = data.randomSplit(Array(0.7, 0.3))
+    val splits = preprocess.randomSplit(Array(0.25, 0.10))
     val trainset = splits(0).cache()
-    val testset = splits(1)
-
+    val testset = splits(1).cache()
 
     trainset.show()
 
@@ -85,8 +94,8 @@ object App {
     
     
  
-    trainset.write.mode("overwrite").option("header", "true").csv("hdfs://hadoop-master:9000/data/trainset.csv")
-    testset.write.mode("overwrite").option("header", "true").csv("hdfs://hadoop-master:9000/data/testset.csv")
+    trainset.write.mode("overwrite").option("header", "true").csv(trainpath)
+    testset.write.mode("overwrite").option("header", "true").csv(testpath)
 
   
 
