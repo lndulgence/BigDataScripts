@@ -1,6 +1,8 @@
 package ML
 import org.apache.spark.sql.{SparkSession, Row}
 import org.apache.spark.sql.functions._
+import org.apache.spark.ml.regression.LinearRegressionModel
+import org.apache.spark.ml.PipelineModel
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.ml.Transformer
 import org.apache.spark.ml.feature.Normalizer
@@ -139,7 +141,7 @@ object App {
         model.write.overwrite().save(savepath)
       }
   else{
-        val results=getpreds(spark, modelpath, datapath).select("Month", "DayofMonth", "DayOfWeek", "FlightNum", "CRSElapsedTime", "DepDelay", "Distance", "TaxiOut", "Origin_t", "Dest_t", "UniqueCarrier_t", "DepHour", "DepMin", "CRSDepHour", "CRSDepMin", "CRSArrHour", "CRSArrMin", "CompoundDelay", "ArrDelay","prediction")
+        val results=getpreds(spark, modelpath, datapath).select("Month", "DayofMonth", "DayOfWeek", "FlightNum", "DepDelay", "Distance", "TaxiOut", "Origin_t", "Dest_t", "UniqueCarrier_t", "DepHour", "DepMin", "CRSDepHour", "CRSDepMin", "CRSArrHour", "CRSArrMin", "CompoundDelay", "ArrDelay","prediction")
         results.write.mode("overwrite").option("header", "true").csv(savepath)
       }
   }
@@ -164,26 +166,33 @@ object App {
     var trainset = spark.read.option("header", "true").csv(trainpath)
     var testset = spark.read.option("header", "true").csv(testpath)
     val castint = udf(( x: String)=>x.toFloat)
-  for(column<-Array("DepMin", "DepHour", "CRSDepHour", "CRSDepMin", "CRSArrHour", "CRSArrMin", "CRSElapsedTime", "DepDelay","Distance", "TaxiOut", "ArrDelay", "CompoundDelay", "ArrDelay")){
+    var numcolumns : List[String]= List()
+    for(column<-Array("DepDelay", "Distance", "TaxiOut",	 "DepHour", "DepMin", "CRSDepHour", "CRSDepMin", "CRSArrHour", "CRSArrMin", "CompoundDelay")){
+      if(trainset.columns.contains(column)){
+        numcolumns=numcolumns:::List(column)
+      }
+    }
+  for(column<-numcolumns){
       testset=testset.withColumn(column, testset(column).cast("float") )
     }
 
-     for(column<-Array("DepMin", "DepHour", "CRSDepHour", "CRSDepMin", "CRSArrHour", "CRSArrMin", "CRSElapsedTime", "DepDelay","Distance", "TaxiOut", "ArrDelay", "CompoundDelay", "ArrDelay")){
+     for(column<-numcolumns){
       trainset=trainset.withColumn(column, trainset(column).cast("float") )
         }
 
-    trainset=handleNAValues(spark,trainset.na.drop(), trainset, trainset.columns)
-    testset=handleNAValues(spark, testset.na.drop(), testset, testset.columns)
+    trainset=handleNAValues(spark,trainset.na.drop(), trainset, (trainset.columns.toSet -- Array("ArrDelay").toSet).toArray)
+    testset=handleNAValues(spark, testset.na.drop(), testset, (testset.columns.toSet -- Array("ArrDelay").toSet).toArray)
 
     for(column<-trainset.columns){
-      testset=testset.withColumn(column, testset(column).cast("float") )
+      testset=testset.withColumn(column, testset(column).cast("double") ).na.drop()
     }
 
     for(column<-trainset.columns){
-      trainset=trainset.withColumn(column, trainset(column).cast("float") )
+      trainset=trainset.withColumn(column, trainset(column).cast("double") ).na.drop()
       }
+    
  
-     val featuresinp= Array("Month", "DayofMonth", "DayOfWeek", "FlightNum", "CRSElapsedTime", "DepDelay", "Distance", "TaxiOut", "Origin_t", "Dest_t", "UniqueCarrier_t", "DepHour", "DepMin", "CRSDepHour", "CRSDepMin", "CRSArrHour", "CRSArrMin", "CompoundDelay")
+    val featuresinp= (trainset.columns.toSet -- Array("ArrDelay").toSet).toArray
     //Creates the variable vectors used in the algorithms
     val assembler = new VectorAssembler()
       .setInputCols(featuresinp)
@@ -224,19 +233,25 @@ object App {
         .setEstimatorParamMaps(paramGrid)
       .setNumFolds(5)
 
+      trainset.select("ArrDelay").show()
       val model =cv.fit(trainset)
-
   
       val transf_test = model.transform(testset).select("ArrDelay", "prediction")
 
     //we create a regression metrics object by passing it a vector of tuples containing the prediction vs the actual value
     val rm = new RegressionMetrics(transf_test.rdd.map(x =>
-          (x(0).asInstanceOf[Float].toDouble, x(1).asInstanceOf[Double])))
-
+          (x(0).asInstanceOf[Double], x(1).asInstanceOf[Double])))
+      
+      val lrm: LinearRegressionModel = model
+      .bestModel.asInstanceOf[PipelineModel]
+      .stages
+      .last.asInstanceOf[LinearRegressionModel]
       println("sqrt(MSE): " + Math.sqrt(rm.meanSquaredError))
       println("MAE: " + 	rm.meanAbsoluteError)
       println("R Squared: " + rm.r2)                         
       println("Explained Variance: " + rm.explainedVariance + "\n")
+      println("Linear Regression coefficients: "+lrm.coefficients+ "\n")
+      println("Linear Regression intercept: "+ lrm.intercept+"\n")
       return model
       
 
@@ -301,7 +316,7 @@ object App {
           val transf_test = model.transform(testset).select("ArrDelay", "prediction")
 
           val rm = new RegressionMetrics(transf_test.rdd.map(x =>
-            (x(0).asInstanceOf[Float].toDouble, x(1).asInstanceOf[Double])))
+            (x(0).asInstanceOf[Double], x(1).asInstanceOf[Double])))
 
           println("sqrt(MSE): " + Math.sqrt(rm.meanSquaredError))
           println("MAE: " + 	rm.meanAbsoluteError)

@@ -1,6 +1,7 @@
 package preprocess
 import org.apache.spark.sql.{SparkSession, Row}
 import org.apache.spark.sql.functions._
+import org.apache.spark.sql.DataFrameStatFunctions
 import org.apache.spark.ml.feature.Normalizer
 import org.apache.spark.sql.functions.rand
 import java.nio.file.{Paths, Files}
@@ -78,21 +79,25 @@ object App {
     preprocess  = preprocess.withColumn("CRSDepHour", hourtransform($"CRSDepTime")).withColumn("CRSDepMin", minutetransform($"CRSDepTime")).drop("CRSDepTime")
     preprocess = preprocess.withColumn("CRSArrHour", hourtransform($"CRSArrTime")).withColumn("CRSArrMin", minutetransform($"CRSArrTime")).drop("CRSArrTime")
     preprocess = preprocess.withColumn("CompoundDelay", $"CRSElapsedTime"+$"TaxiOut"+$"DepDelay")
-    preprocess = preprocess.select("Month", "DayofMonth", "DayOfWeek", "FlightNum", "CRSElapsedTime", "DepDelay", "Distance", "TaxiOut", "Origin_t", "Dest_t", "UniqueCarrier_t", "DepHour", "DepMin", "CRSDepHour", "CRSDepMin", "CRSArrHour", "CRSArrMin", "CompoundDelay", "ArrDelay")
+    //Drop CRSElapsedTime to avoid multicollinearity with compound variable
+    preprocess = preprocess.select("Month", "DayofMonth", "DayOfWeek", "FlightNum", "DepDelay", "Distance", "TaxiOut", "Origin_t", "Dest_t", "UniqueCarrier_t", "DepHour", "DepMin", "CRSDepHour", "CRSDepMin", "CRSArrHour", "CRSArrMin", "CompoundDelay", "ArrDelay")
     val castint = udf(( x: String)=>x.toFloat)
    for(column<-preprocess.columns){
     preprocess=preprocess.withColumn(column, preprocess(column).cast("float") )
     }
+  
+  //Drop columns whose correlation is lower than 0.10
+   val numcolumns= Array("DepDelay", "Distance", "TaxiOut",	 "DepHour", "DepMin", "CRSDepHour", "CRSDepMin", "CRSArrHour", "CRSArrMin", "CompoundDelay")
+   for(column<-numcolumns){
+    var correlation=preprocess.stat.corr(column, "ArrDelay")
+    if(correlation.abs<0.10){
+      preprocess=preprocess.drop(column)
+    }
+   }
 
     val splits = preprocess.randomSplit(Array(0.25, 0.10))
     val trainset = splits(0).cache()
     val testset = splits(1).cache()
-
-    trainset.show()
-
-    testset.show()
-    
-    
  
     trainset.write.mode("overwrite").option("header", "true").csv(trainpath)
     testset.write.mode("overwrite").option("header", "true").csv(testpath)
