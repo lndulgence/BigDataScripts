@@ -59,14 +59,14 @@ object App {
     
       //This very long line creates a HashMap that associates every Airport present in the Origin or Dest columns with an unique id.
     val placedf = datatotransform.select("Origin").distinct.union(datatotransform.select("Dest").distinct).distinct.withColumn("id",monotonicallyIncreasingId).select($"Origin", $"id".cast("int")).as[(String, Int)]
-    placedf.write.mode("overwrite").option("header", "true").csv("hdfs://hadoop-master:9000/data/placemap")
+    //placedf.write.mode("overwrite").option("header", "true").csv("hdfs://hadoop-master:9000/data/placemap.csv")
     val placemap=placedf.collect.toMap//save map to hdfs for future use, as mappings must remain constant
     val mapplace = udf((x: String) => placemap.get(x))
 
       //This transformation assigns a unique ID to each Carrier
     val carrierdf = datatotransform.select("UniqueCarrier").distinct.withColumn("id",monotonicallyIncreasingId).select($"UniqueCarrier", $"id".cast("int")).as[(String, Int)]
     val carriermap = carrierdf.collect.toMap //save map to hdfs for future use, as mappings must remain constant
-    carrierdf.write.mode("overwrite").option("header", "true").csv("hdfs://hadoop-master:9000/data/placemap")
+    //carrierdf.write.mode("overwrite").option("header", "true").csv("hdfs://hadoop-master:9000/data/carriermap.csv")
     val mapcarrier = udf((x:String) => carriermap.get(x))
       //These user defined functions break down the HHMM format columns to two columns containing the hour and minute, respectively.
     val hourtransform=udf((x: String)=> if (x.split("").length==3) x.split("").take(1).toList.mkString("").toInt else if (x.split("").length==4) x.split("").take(2).toList.mkString("").toInt else 0   )
@@ -95,7 +95,7 @@ object App {
     }
    }
 
-    val splits = preprocess.randomSplit(Array(0.25, 0.10))
+    val splits = preprocess.randomSplit(Array(0.70, 0.30))
     val trainset = splits(0).cache()
     val testset = splits(1).cache()
  
